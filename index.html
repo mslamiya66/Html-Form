@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hotel Reservation Form</title>
+    </head>
+<body>
+    <h1 style="text-align: center;"><u>Hotel Reservation Form</u></h1><br>
+    <h3 style="text-align: center;">Please complete the form below.</h3>
+<p style="text-align: center;">Your registration wil be verified prior to your arrival</p>
+<hr>
+<fieldset>
+    <legend>Your Personal Info.</legend>
+    <!-- input type name -->
+    <form>
+       <div>
+        <p><label for="name"><b>Full Name:</b></label></p>
+        <input id="name" type="text" placeholder="First Name">
+        <input id="name" type="text" placeholder="Last Name">
+       </div>
+       <!-- input type address -->
+       <div>
+        <p><label for="address"><b>Address:</b></label></p>
+        <input id="address" type="text" placeholder="Street Address" style="width:30%">
+<p><input id="address" type="text" placeholder="Street Address Line 2" style="width:20%"></p>
+<input id="address" type="text" placeholder="city" style="width: 10%;">
+<input id="address" type="text" placeholder="State/Province" style="width: 10%;">
+<p><input id="address" type="text" placeholder="Postal/Zip code" style="width: 40%;"></p>
+       </div>
+       <!-- input type mail & number -->
+       <div>
+        <label for="number"><b>Phone Number</b></label>
+        <input id="number" type="number" placeholder="01xxx-xxx-xxx">
+        <label for="email"><b>E-mail</b></label>
+        <input id="email" type="email" placeholder="ex: myname@example.com">
+       </div><br>
+    </fieldset>
+       <!-- input type date & time -->
+       <fieldset>
+        <legend>Others Formalities</legend>
+        <div>
+        <label for="date & time"><b>Arrival-Date & Time</b></label>
+        <p><input id="date & time" type="date">
+            <input id="date & time" type="datetime" placeholder="HH:MM">
+            <select name="arrival time" id="time">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            </p>
+            <label for="Departure -time"><b>Departure-Date & Time</b></label>
+            <p><input id="Departure -time" type="date">
+                <input id="Departure -time" type="datetime" placeholder="HH:MM">
+                <select name="Departure -time" id="Departure -time">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                </p>
+                </div>
+                <div>
+                    <label for="member"><b>Number of Adults</b></label>
+                    <input id="member" type="number">
+                    <label for="kids-member"><b>Number of kids</b></label>
+                    <input id=" kids-member" type="number">
+                </div>
+                <div>
+                <h4>Payment Method</h4>
+                <input id="check" type="radio" name="payment" value="check">
+                <label for="check">Check</label>
+                <input id="Bkash" type="radio" name="payment" value="Bkash">
+                <label for="Bkash">Bkash</label>
+                </di>
+       </fieldset>
+       <fieldset>
+        <legend><h4>Do you have any Special request?</h4></legend>
+        <textarea name="special request" id="special request" cols="50" rows="10"></textarea>
+       </fieldset>
+      <p> <button type="submit" style="color:black;background-color:antiquewhite; text-align: center; width: 10%;"><b>Submit</b></button></p>
+       
+    </form>
+    
+</body>
+</html>
